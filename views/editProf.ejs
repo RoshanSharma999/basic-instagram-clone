@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <style>
+        *{
+            margin: 10px 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Edit Profile</h2>
+    <form method="post" action="/posts?_method=PATCH">
+        <label>User id: </label>
+        <input type="text" name="id" value="<%= user.id %>"><br>
+        <label>Username: </label>
+        <input type="text" name="username" value="<%= user.username %>"><br>
+        <label>Bio: </label>
+        <input type="text" name="bio" value="<%= user.bio %>"><br>
+        <button>Update</button>
+    </form>
+</body>
+</html>

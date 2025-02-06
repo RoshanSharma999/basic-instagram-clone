@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Post</title>
+    <style>
+        *{
+            margin: 10px 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Edit Post</h2>
+    <form method="post" action="/posts/<%= idvPost.id %>?_method=PATCH">
+        <label>Location: </label>
+        <input type="text" name="location" value="<%= idvPost.location %>"><br>
+        <label>Caption: </label>
+        <input type="text" name="caption" value="<%= idvPost.caption %>"><br>
+        <button>Update</button>
+    </form>
+</body>
+</html>

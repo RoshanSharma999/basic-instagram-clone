@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h2{
+    color: maroon;
+    margin: 10px;
+}
+h3{
+    font-weight: 400;
+}
+#perInfo{
+    display: flex;
+    margin: 10px;
+}
+#perInfo div{
+    margin-right: 20px;
+}
+
+a, button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    width: 100px;
+    height: 25px;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(235, 235, 235);
+    border: 1px solid black;
+    border-radius: 5px;
+}
+form{
+    display: inline-block;
+}
+#posts{
+    display: grid;
+    width: 100%;
+    padding: 20px;
+    padding-top: 0;
+    box-sizing: border-box;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px 15px ;
+}
+#posts div{
+    border: 1px solid rgb(187, 187, 187);
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+#posts div img{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}

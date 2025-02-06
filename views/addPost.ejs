@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Post</title>
+    <style>
+        *{
+            margin: 10px 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Add Post</h2>
+    <form method="post" action="/posts">
+        <label>Location: </label>
+        <input type="text" name="location" required autocomplete="off"><br>
+        <label>Image link: </label>
+        <input type="text" name="img" required autocomplete="off"><br>
+        <p>(How to add <b>image link</b>: Browse => right click on image => Copy image address)</p>
+        <label>Caption: </label>
+        <input type="text" name="caption" required autocomplete="off"><br>
+        <button>Add</button>
+    </form>
+</body>
+</html>
