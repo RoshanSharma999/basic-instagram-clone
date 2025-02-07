@@ -1,6 +1,6 @@
 # Instagram Clone (RESTful API Practice)
 
-This is a simple Instagram clone built using **Node.js**, **Express**, and **EJS** to practice RESTful APIs and CRUD operations.
+This is a basic Instagram clone built with Node.js, Express, and EJS to practice RESTful APIs and CRUD operations. I prioritized learning REST over styling, so the design is minimal.
 
 ## Features
 - **Edit Profile** – Update user profile details.
