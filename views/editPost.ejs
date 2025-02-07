@@ -14,9 +14,9 @@
     <h2>Edit Post</h2>
     <form method="post" action="/posts/<%= idvPost.id %>?_method=PATCH">
         <label>Location: </label>
-        <input type="text" name="location" value="<%= idvPost.location %>"><br>
+        <input type="text" name="location" value="<%= idvPost.location %>" required autocomplete="off"><br>
         <label>Caption: </label>
-        <input type="text" name="caption" value="<%= idvPost.caption %>"><br>
+        <input type="text" name="caption" value="<%= idvPost.caption %>" required autocomplete="off"><br>
         <button>Update</button>
     </form>
 </body>
