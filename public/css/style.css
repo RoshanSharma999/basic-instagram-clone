@@ -16,6 +16,10 @@ h3{
 #perInfo div{
     margin-right: 20px;
 }
+#perInfo div img{
+    width: 90%;
+    max-width: 225px;
+}
 
 a, button{
     display: inline-flex;
@@ -51,4 +55,21 @@ form{
 #posts div img{
     width: 100%;
     aspect-ratio: 16 / 9;
+}
+
+@media(max-width: 1100px){
+    #posts{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(max-width: 700px){
+    #posts{
+        grid-template-columns: 1fr;
+    }
+}
+@media(max-width: 550px){
+    #perInfo{
+        display: flex;
+        flex-direction: column;
+    }
 }
