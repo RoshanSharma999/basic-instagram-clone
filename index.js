@@ -42,7 +42,7 @@ let user = {
 };
 
 app.listen(port, () => {
-    console.log(`Listening on port ${port}`);
+    console.log(`Listening on port ${port}/posts`);
 });
 
 app.get("/posts", (req, res) => {
