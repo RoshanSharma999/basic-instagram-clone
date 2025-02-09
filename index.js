@@ -43,6 +43,7 @@ let user = {
 
 app.listen(port, () => {
     console.log(`Listening on port ${port}/posts`);
+    console.log(`http://localhost:${port}/posts`);
 });
 
 app.get("/posts", (req, res) => {
